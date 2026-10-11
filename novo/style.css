@@ -338,3 +338,21 @@ body{letter-spacing:.005em}
 .pef{display:flex;justify-content:space-between;padding-top:24px;padding-bottom:28px;border-top:1px solid rgba(255,255,255,.1);font-size:11px;letter-spacing:.24em;text-transform:uppercase;color:rgba(255,255,255,.5)}
 @media(max-width:900px){.frase .g{grid-template-columns:1fr}.peg{grid-template-columns:1fr 1fr;gap:40px 24px}.pef{flex-direction:column;gap:10px}.cd,.cases .cd{height:380px}.srv{grid-template-columns:44px 1fr}.srv ul{grid-column:2}.chamada{padding:30px}.nav nav{gap:18px;font-size:9px}.cab.alto .cabt{top:22vh}}
 .frase.w,.grande.w{padding-left:4vw;padding-right:4vw}
+
+/* ================= ID DA VP: sem serifa, preto e azul claro, ouro só na logo ================= */
+:root{--ouro:#D1DFEC;--az:#D1DFEC;--az2:#9dbdda;--serif:"Inter Tight",sans-serif;--forte:"Archivo",sans-serif}
+body,.contato input,.contato textarea{font-family:"Inter Tight",sans-serif}
+.intro h1,.cabt h1,.frase h2,.grande h2,.tit2 h2,.sobre h2,.chamada h2,.fim h2,.caso h2,.ct h1,.vt h1,.srv h3,.peg p{font-family:"Inter Tight",sans-serif;font-weight:300;letter-spacing:-.045em;font-style:normal}
+.intro h1 span,.cabt h1 span,.grande h2 span,.tit2 h2 span,.sobre h2 span,.chamada h2 span,.fim h2 span,.vt h1 span{display:inline-block;font-family:var(--forte);font-stretch:125%;font-weight:800;font-style:normal;text-transform:uppercase;letter-spacing:-.025em;line-height:1;font-size:.56em;color:var(--az);margin-top:.22em}
+.frase h2 span,.peg p i{font-style:normal;font-family:inherit;color:rgba(255,255,255,.5)}
+.cd b,.passos b,.canais b,.e18 b{font-family:"Inter Tight",sans-serif;font-weight:400;letter-spacing:-.025em}
+.cd b{font-size:24px}.passos b{font-size:22px}.canais b{font-size:26px}.e18 b{font-size:16px;font-weight:300}
+.srv i,.passos i,.e18 i{font-family:var(--forte);font-stretch:125%;font-weight:800;font-style:normal;font-size:13px;letter-spacing:0;color:var(--az2)}
+.tag,.frase small,.frase .rot small,.peg small{font-weight:600;color:var(--az2)}
+.nav nav,.pil,.pil.cheia,.seta,.rodcapa,.pef{font-weight:500}
+.contato input,.contato textarea{font-size:18px}
+.cd.claro{background:#D1DFEC}
+.chamada{border-left:1px solid var(--az2)}
+.srv h3{font-weight:400;letter-spacing:-.035em}
+.ct h1{font-size:clamp(30px,4.2vw,64px)}
+.frase h2{letter-spacing:-.04em;line-height:1.12}
