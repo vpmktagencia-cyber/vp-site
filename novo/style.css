@@ -601,3 +601,11 @@ html,body{overflow-x:clip}
 .tira{display:flex;gap:14px;margin-top:14px;align-items:flex-start}
 .tira img{min-width:0;width:100%;height:auto;border-radius:14px;display:block}
 @media(max-width:900px){.tira{flex-wrap:wrap}.tira img{flex:1 1 28%!important}}
+
+/* fotos novas da Victoria (11.out) */
+.vich .foto{background:url(img/v-retrato.jpg) 50% 20%/cover;width:56%;-webkit-mask:linear-gradient(90deg,transparent,#000 30%);mask:linear-gradient(90deg,transparent,#000 30%)}
+.vich{background:#000}
+.sobre .f{background:url(img/v-cadeira.jpg) 50% 20%/cover;height:620px}
+.trio{align-items:center}
+.trio img{width:100%;height:auto;display:block;border-radius:var(--r)}
+.trio{margin-top:4vh}
