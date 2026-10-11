@@ -535,3 +535,16 @@ body,.pe{background:#020a0f}
 .srv ul{columns:2;column-gap:3vw}
 .srv li{break-inside:avoid;font-size:14px;padding:11px 0;color:rgba(255,255,255,.82)}
 @media(max-width:900px){.cards.seis{grid-template-columns:1fr 1fr}.srv{grid-template-columns:40px 1fr}.srv ul{grid-column:2;columns:1}}
+
+/* logo em selo: monograma no centro, texto girando em volta */
+.selo{position:relative;display:inline-grid;place-items:center;width:150px;aspect-ratio:1}
+.selo svg{position:absolute;inset:0;animation:gira 26s linear infinite}
+.selo circle{fill:none;stroke:rgba(209,223,236,.45);stroke-width:.7}
+.selo text{fill:#D1DFEC;font:500 12.5px "Inter Tight",sans-serif;letter-spacing:.2em}
+.selo img{width:36%;filter:brightness(0) invert(1)}
+@keyframes gira{to{transform:rotate(360deg)}}
+.abre .selo{position:absolute;right:5vw;bottom:7vh;z-index:3;background:rgba(2,10,15,.35);border-radius:50%;backdrop-filter:blur(6px)}
+.cit{right:calc(5vw + 180px);bottom:10vh}
+.peg .selo{width:120px;margin-bottom:22px}
+.peg .selo img{height:auto;margin:0}
+@media(max-width:900px){.abre .selo{width:104px;bottom:3vh}}
