@@ -565,3 +565,9 @@ html,body{overflow-x:clip}
 @media(max-width:900px){.fim .selo{position:relative;right:auto;top:auto;transform:none;width:120px;margin-top:5vh}}
 .fim>.selo:not(.bg):not(.v){position:absolute;right:7vw;top:50%;transform:translateY(-50%);width:min(24vw,300px)}
 @media(max-width:900px){.fim>.selo:not(.bg):not(.v){position:relative;right:auto;top:auto;transform:none;width:120px;margin-top:5vh}}
+
+/* selo = o adesivo da VP (arte dela), no lugar do selo giratório */
+.selo.adesivo{background:none!important;backdrop-filter:none!important;border-radius:0}
+.selo.adesivo img,.peg .selo.adesivo img{width:100%;height:auto;margin:0;filter:drop-shadow(0 18px 30px rgba(0,0,0,.45))}
+.abre .selo.adesivo{width:150px;transform:rotate(-8deg)}
+.peg .selo.adesivo{width:110px}
