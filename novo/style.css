@@ -625,3 +625,4 @@ html,body{overflow-x:clip}
 .frase{min-height:calc(9vh + min(46vw,560px) + 18vh)}
 .frase + section{padding-top:8vh}
 @media(max-width:900px){.frase{min-height:calc(9vh + 86vw + 12vh)}}
+.m img.alto{margin-bottom:0}
