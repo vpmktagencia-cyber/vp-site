@@ -594,3 +594,6 @@ html,body{overflow-x:clip}
 .ensaios img:nth-child(-n+3){aspect-ratio:2/3}
 .ensaios img:nth-child(n+4){aspect-ratio:16/9}
 @media(max-width:900px){.vt2{grid-template-columns:1fr}.telas{grid-template-columns:1fr}.ensaios{grid-template-columns:1fr 1fr}.trilho img{height:340px}}
+/* ensaios: fotos inteiras, sem recorte */
+.ensaios{align-items:center}
+.ensaios img,.ensaios img:nth-child(-n+3),.ensaios img:nth-child(n+4){aspect-ratio:auto;height:auto;object-fit:contain}
