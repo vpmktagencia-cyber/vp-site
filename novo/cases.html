@@ -9,7 +9,7 @@
 <meta property="og:description" content="Marcas que passaram pela Virada de Marca da VP Agência.">
 <link rel="icon" href="img/vp-logo.png">
 <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@300;400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css?v=1011194752">
+<link rel="stylesheet" href="style.css?v=1011194943">
 </head>
 <body>
 <section class="cab "><div class="bg" style="background-image:url(img/g-golfe.jpg);background-position:50% 50%"></div><div class="v"></div>
@@ -22,8 +22,8 @@
   <div class="feeds"><div class="trilho"><img src="img/extra/feed-1.jpg" alt="" loading="lazy"><img src="img/extra/feed-2.jpg" alt="" loading="lazy"><img src="img/extra/feed-3.jpg" alt="" loading="lazy"><img src="img/extra/feed-4.jpg" alt="" loading="lazy"><img src="img/extra/feed-5.jpg" alt="" loading="lazy"><img src="img/extra/feed-6.jpg" alt="" loading="lazy"><img src="img/extra/feed-7.jpg" alt="" loading="lazy"><img src="img/extra/feed-8.jpg" alt="" loading="lazy"><img src="img/extra/feed-9.jpg" alt="" loading="lazy"><img src="img/extra/feed-1.jpg" alt="" loading="lazy"><img src="img/extra/feed-2.jpg" alt="" loading="lazy"><img src="img/extra/feed-3.jpg" alt="" loading="lazy"><img src="img/extra/feed-4.jpg" alt="" loading="lazy"><img src="img/extra/feed-5.jpg" alt="" loading="lazy"><img src="img/extra/feed-6.jpg" alt="" loading="lazy"><img src="img/extra/feed-7.jpg" alt="" loading="lazy"><img src="img/extra/feed-8.jpg" alt="" loading="lazy"><img src="img/extra/feed-9.jpg" alt="" loading="lazy"></div></div></div><div class="vit rv"><div class="vt2"><span class="tag">Site institucional</span><h3>O site no ar, com a cara<br><span>da nova marca.</span></h3>
   <p>Sites sob medida, publicados dentro do projeto e pensados para levar a pessoa até o contato.</p></div>
   <div class="telas">
-    <figure><video src="img/video/site-carrion.mp4" poster="img/video/site-carrion.jpg" autoplay muted loop playsinline></video><figcaption>Carrion Advogados</figcaption></figure>
-    <figure><video src="img/video/site-thiers.mp4" poster="img/video/site-thiers.jpg" autoplay muted loop playsinline></video><figcaption>Thiers Engenharia</figcaption></figure>
+    <figure><video src="img/video/site-carrion.mp4" poster="img/video/site-carrion.jpg" muted loop playsinline preload="auto"></video><figcaption>Carrion Advogados</figcaption></figure>
+    <figure><video src="img/video/site-thiers.mp4" poster="img/video/site-thiers.jpg" muted loop playsinline preload="auto"></video><figcaption>Thiers Engenharia</figcaption></figure>
   </div></div><div class="vit rv"><div class="vt2"><span class="tag">Ensaio corporativo</span><h3>Fotos profissionais<br><span>que sustentam a marca.</span></h3>
   <p>Retratos, equipe, ambiente e produto, prontos para site, Instagram e campanhas.</p></div>
   <div class="ensaios"><img src="img/extra/ensaio-1.jpg" alt="" loading="lazy"><img src="img/extra/ensaio-2.jpg" alt="" loading="lazy"><img src="img/extra/ensaio-3.jpg" alt="" loading="lazy"></div><div class="tira"><img src="img/ens/med1.jpg" alt="" loading="lazy" style="flex:0.6912 1 0"><img src="img/ens/med2.jpg" alt="" loading="lazy" style="flex:0.6893 1 0"><img src="img/ens/med3.jpg" alt="" loading="lazy" style="flex:0.6864 1 0"><img src="img/ens/doce1.jpg" alt="" loading="lazy" style="flex:0.6667 1 0"><img src="img/ens/doce2.jpg" alt="" loading="lazy" style="flex:0.5652 1 0"><img src="img/ens/doce3.jpg" alt="" loading="lazy" style="flex:0.6667 1 0"><img src="img/ens/doce4.jpg" alt="" loading="lazy" style="flex:0.5537 1 0"></div></div></section>
@@ -43,6 +43,14 @@
 const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('on');io.unobserve(e.target)}}),{threshold:.1});
 document.querySelectorAll('.rv').forEach(el=>io.observe(el));
 if(location.search.includes('tudo'))document.querySelectorAll('.rv').forEach(el=>el.classList.add('on'));
+// vídeos dos sites: começam juntos quando a seção aparece e voltam a alinhar a cada volta do mais longo
+document.querySelectorAll('.telas').forEach(t=>{const vs=[...t.querySelectorAll('video')];if(!vs.length)return;
+  const juntos=()=>{vs.forEach(v=>{v.currentTime=0});vs.forEach(v=>v.play().catch(()=>{}))};
+  const longo=vs.reduce((a,b)=>(b.duration||0)>(a.duration||0)?b:a,vs[0]);
+  new IntersectionObserver((es,o)=>{if(es[0].isIntersecting){o.disconnect();
+    const pronto=()=>vs.every(v=>v.readyState>=2);
+    const ir=()=>{const l=vs.reduce((a,b)=>(b.duration||0)>(a.duration||0)?b:a,vs[0]);l.addEventListener('seeked',()=>{if(l.currentTime<.2)vs.forEach(v=>{if(v!==l)v.currentTime=0})});juntos()};
+    if(pronto())ir();else{let n=0;const k=setInterval(()=>{if(pronto()||++n>40){clearInterval(k);ir()}},150)}}},{threshold:.25}).observe(t)});
 </script>
 </body>
 </html>

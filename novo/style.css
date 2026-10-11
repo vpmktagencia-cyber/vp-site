@@ -611,3 +611,7 @@ html,body{overflow-x:clip}
 .trio{margin-top:4vh}
 .sobre .f{background:#e9e9e9 url(img/v-notebook.jpg) 50% 100%/cover;height:660px}
 .trio img{filter:grayscale(1) contrast(1.06)}
+/* vídeos dos sites: tela inteira do site, sem corte, os dois do mesmo tamanho */
+.telas figure{background:#fff}
+.telas video{aspect-ratio:1200/636;object-fit:contain;object-position:top;background:#fff}
+.telas figcaption{background:#04121a}

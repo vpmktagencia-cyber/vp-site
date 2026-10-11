@@ -9,7 +9,7 @@
 <meta property="og:description" content="Branding, estratégia e design para quem faz um bom trabalho e quer ser percebido assim. Conheça a Virada de Marca da VP Agência.">
 <link rel="icon" href="img/vp-logo.png">
 <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@300;400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css?v=1011194752">
+<link rel="stylesheet" href="style.css?v=1011194943">
 </head>
 <body>
 <section class="abre">
@@ -70,6 +70,14 @@
 const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('on');io.unobserve(e.target)}}),{threshold:.1});
 document.querySelectorAll('.rv').forEach(el=>io.observe(el));
 if(location.search.includes('tudo'))document.querySelectorAll('.rv').forEach(el=>el.classList.add('on'));
+// vídeos dos sites: começam juntos quando a seção aparece e voltam a alinhar a cada volta do mais longo
+document.querySelectorAll('.telas').forEach(t=>{const vs=[...t.querySelectorAll('video')];if(!vs.length)return;
+  const juntos=()=>{vs.forEach(v=>{v.currentTime=0});vs.forEach(v=>v.play().catch(()=>{}))};
+  const longo=vs.reduce((a,b)=>(b.duration||0)>(a.duration||0)?b:a,vs[0]);
+  new IntersectionObserver((es,o)=>{if(es[0].isIntersecting){o.disconnect();
+    const pronto=()=>vs.every(v=>v.readyState>=2);
+    const ir=()=>{const l=vs.reduce((a,b)=>(b.duration||0)>(a.duration||0)?b:a,vs[0]);l.addEventListener('seeked',()=>{if(l.currentTime<.2)vs.forEach(v=>{if(v!==l)v.currentTime=0})});juntos()};
+    if(pronto())ir();else{let n=0;const k=setInterval(()=>{if(pronto()||++n>40){clearInterval(k);ir()}},150)}}},{threshold:.25}).observe(t)});
 </script>
 </body>
 </html>
