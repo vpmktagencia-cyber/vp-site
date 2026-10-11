@@ -609,3 +609,4 @@ html,body{overflow-x:clip}
 .trio{align-items:center}
 .trio img{width:100%;height:auto;display:block;border-radius:var(--r)}
 .trio{margin-top:4vh}
+.sobre .f{background:#e9e9e9 url(img/v-notebook.jpg) 50% 100%/cover;height:660px}
