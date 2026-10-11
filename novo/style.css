@@ -463,3 +463,31 @@ body{background:#02050a}
 .bl{padding-top:12vh}
 .fim h2{margin-bottom:4vh}
 .fim{background:radial-gradient(90% 120% at 50% 135%,rgba(70,160,240,.9),transparent 64%),#04090f}
+
+/* ================= CORES DA VIRADA DE MARCA (virada-de-marca.netlify.app): preto, #D1DFEC, #A8B3BE, #F5F1EC ================= */
+:root{--az:#D1DFEC;--az2:#D1DFEC;--cz:#A8B3BE;--off:#F5F1EC;--glow:rgba(209,223,236,.5);--fundo:#000}
+body,.pe,.abre,.casoh,.vich{background-color:#000}
+body{background:#000}
+.abre{background:radial-gradient(60vw 46vh at 30% 58%,rgba(168,179,190,.42),transparent 70%),radial-gradient(40vw 30vh at 70% 20%,rgba(168,179,190,.2),transparent 70%),#000}
+.abre::after{background:linear-gradient(180deg,transparent,#000)}
+.jan .im,.cab .bg,.cd .im,.fim .bg,.vich .foto,.sobre .f,.trio div{filter:saturate(.38)}
+.aneis i{border-color:rgba(209,223,236,.6)}
+.cab{background:radial-gradient(70% 90% at 50% 110%,rgba(168,179,190,.7),transparent 62%),radial-gradient(60% 60% at 20% 0%,rgba(168,179,190,.22),transparent 70%),#050505}
+.cab .v{background:linear-gradient(180deg,rgba(0,0,0,.5),rgba(0,0,0,0) 60%)}
+.casoh .luz,.vich .luz{background:radial-gradient(60vw 80vh at 80% 50%,rgba(168,179,190,.3),transparent 70%)}
+.frase::before{border-bottom-color:rgba(209,223,236,.75)}
+.grande::before{border-bottom-color:rgba(245,241,236,.85)}
+.cd:not(:has(.im)),.cd.claro{background:linear-gradient(180deg,#080808 35%,rgba(168,179,190,.42))}
+.cd .im::after{background:linear-gradient(180deg,rgba(0,0,0,.1) 30%,rgba(0,0,0,.88))}
+.m{background:#080808}
+.chamada{background:radial-gradient(80% 120% at 100% 100%,rgba(168,179,190,.45),transparent 60%),#080808}
+.sobre .x,.contato form{background:radial-gradient(80% 90% at 0% 100%,rgba(168,179,190,.34),transparent 60%),#080808}
+.fim{background:radial-gradient(90% 120% at 50% 135%,rgba(209,223,236,.8),transparent 64%),#050505}
+.fim .pil{background:#000;color:#fff}
+.pil:hover,.pil.cheia:hover{background:var(--az);color:#000}
+.nav a.pil,.frase .seta,.pil,.pil.cheia,.pil.branca{background:var(--off);color:#000}
+.centro .pil,.grande .pil{background:rgba(0,0,0,.6);color:#fff}
+.tit2 p,.cabt p,.frase p,.cd span.t,.passos span,.srv p{color:var(--cz)}
+.tag,.frase small,.peg small,.srv i,.passos i,.e18 i,.cit b{color:var(--cz)}
+.frase .rot small{color:#fff}
+.leia::after{background:var(--az);border-color:var(--az)}
