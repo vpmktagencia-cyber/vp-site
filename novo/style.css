@@ -621,3 +621,7 @@ html,body{overflow-x:clip}
 .cards.seis .cd .im::after{background:linear-gradient(180deg,rgba(2,10,15,.15) 0%,rgba(2,10,15,.55) 42%,rgba(2,10,15,.96) 74%)}
 .cd .im,.cd .im::after{border-radius:inherit}
 .cards.seis .cd .im::after{background:linear-gradient(180deg,rgba(2,10,15,.6) 0%,rgba(2,10,15,.2) 22%,rgba(2,10,15,.55) 46%,rgba(2,10,15,.96) 74%)}
+/* o círculo aparece inteiro e sobra respiro antes do bloco seguinte */
+.frase{min-height:calc(9vh + min(46vw,560px) + 18vh)}
+.frase + section{padding-top:8vh}
+@media(max-width:900px){.frase{min-height:calc(9vh + 86vw + 12vh)}}
