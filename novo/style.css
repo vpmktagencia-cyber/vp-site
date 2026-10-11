@@ -272,3 +272,69 @@ body{font-weight:300;background:#07080a}
 .cab .v{background:linear-gradient(180deg,rgba(7,8,10,.5),rgba(7,8,10,.08) 40%,rgba(7,8,10,.78))}
 .fim .v{background:linear-gradient(180deg,rgba(7,8,10,.55),rgba(7,8,10,.2))}
 @media(max-width:900px){.nav nav{gap:18px;font-size:9px;letter-spacing:.2em}.intro.capa{bottom:20vh}.passos div{border-left:0;border-top:1px solid rgba(255,255,255,.16)}.abre .bg{background-position:68% 60%}}
+
+/* ================= REFINO DE LETRAS E LAYOUT ================= */
+/* uma margem só para tudo: menu, títulos e conteúdo alinhados */
+.w{max-width:1680px;padding:0 4vw}
+.nav{left:4vw;right:4vw;top:34px}
+.intro,.cabt,.vt,.ct{left:4vw}.cabt{right:4vw}
+.rodcapa{right:4vw}
+.fim{padding-left:4vw;padding-right:4vw}
+/* texto corrido mais legível */
+body{letter-spacing:.005em}
+.frase p,.tit2 p,.sobre p,.cabt p,.caso p,.chamada p,.srv p,.ct p,.vt p{font-size:16px;line-height:1.75;color:rgba(255,255,255,.7);font-weight:300;letter-spacing:.005em}
+.cd span.t,.passos span{font-size:14px;line-height:1.65;color:rgba(255,255,255,.62)}
+.cd.claro span.t{color:rgba(10,12,16,.62)}
+.srv li{font-size:15px;padding:12px 0}
+.nav nav{font-size:11px;letter-spacing:.26em;gap:44px}
+.pil,.pil.cheia{font-size:11px;letter-spacing:.26em;padding:17px 32px}
+.tag,.frase small,.seta{font-size:11px;letter-spacing:.3em}
+.cab .tag,.casoh .tag,.vich .tag,.fim .tag{color:rgba(255,255,255,.9)}
+.fim .tag{display:block;margin-bottom:26px}
+/* numerais em serifa itálica */
+.srv i,.passos i,.e18 i{font-family:var(--serif);font-style:italic;font-size:22px;letter-spacing:0;text-transform:none;color:var(--ouro)}
+.e18 i{font-size:18px;min-width:30px}
+/* títulos */
+.intro.capa h1{font-size:clamp(44px,7.2vw,124px);line-height:.92}
+.intro.capa{bottom:13vh}
+.cabt h1{margin:22px 0 20px}
+.tit2{margin:0 0 7vh;align-items:end}
+.tit2 p{max-width:360px;margin:0}
+/* bloco da frase: rótulo à esquerda, texto à direita */
+.frase{padding:17vh 0 14vh}
+.frase .g{grid-template-columns:1fr 2.4fr;gap:4vw}
+.frase .rot{display:flex;flex-direction:column;gap:18px;padding-top:14px}
+.frase .rot small{color:var(--ouro);text-transform:uppercase}
+.frase p{margin:34px 0 0;max-width:520px}
+/* cartões alinhados, com fio fino */
+.cards{gap:1px;background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.14);align-items:stretch}
+.cd,.cases .cd{height:480px;margin-top:0!important;padding:32px}
+.cd:not(.claro):not(:has(.im)){border:0;background:#0a0c0f}
+.cd .tag{left:32px;top:30px}
+.cd .pt{margin-bottom:6px}
+.cards.tres .cd{height:380px}
+.parede{gap:1px;background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.14)}
+.m{border:0}
+/* ritmo vertical */
+.bl{padding-top:15vh}
+.grande{padding:20vh 0 14vh}
+.passos{margin:9vh 0 7vh}
+.srv{grid-template-columns:90px 1.4fr 1fr;padding:44px 0}
+.chamada{padding:60px}
+.sobre{margin-top:15vh;gap:1px}
+.cab.alto .cabt{bottom:auto;top:19vh}
+.cab.alto .v{background:linear-gradient(180deg,rgba(7,8,10,.62),rgba(7,8,10,.2) 55%,rgba(7,8,10,.35))}
+/* fechamento e rodapé */
+.fim{margin-top:17vh;padding-top:15vh;padding-bottom:15vh}
+.fim h2{margin-bottom:6vh}
+.pe{background:#07080a;border-top:1px solid rgba(255,255,255,.12);padding:9vh 0 0}
+.peg{display:grid;grid-template-columns:1.6fr 1fr 1fr 1fr;gap:4vw;padding-bottom:9vh}
+.peg img{height:44px;filter:brightness(0) invert(1);margin-bottom:22px}
+.peg p{font-family:var(--serif);font-size:26px;line-height:1.1;font-weight:300}
+.peg p i{color:rgba(255,255,255,.75)}
+.peg small{display:block;font-size:11px;letter-spacing:.3em;text-transform:uppercase;color:var(--ouro);margin-bottom:20px}
+.peg a,.peg span{display:block;font-size:15px;color:rgba(255,255,255,.78);padding:6px 0}
+.peg a:hover{color:#fff}
+.pef{display:flex;justify-content:space-between;padding-top:24px;padding-bottom:28px;border-top:1px solid rgba(255,255,255,.1);font-size:11px;letter-spacing:.24em;text-transform:uppercase;color:rgba(255,255,255,.5)}
+@media(max-width:900px){.frase .g{grid-template-columns:1fr}.peg{grid-template-columns:1fr 1fr;gap:40px 24px}.pef{flex-direction:column;gap:10px}.cd,.cases .cd{height:380px}.srv{grid-template-columns:44px 1fr}.srv ul{grid-column:2}.chamada{padding:30px}.nav nav{gap:18px;font-size:9px}.cab.alto .cabt{top:22vh}}
+.frase.w,.grande.w{padding-left:4vw;padding-right:4vw}
