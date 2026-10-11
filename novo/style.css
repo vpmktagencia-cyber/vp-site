@@ -548,3 +548,20 @@ body,.pe{background:#020a0f}
 .peg .selo{width:120px;margin-bottom:22px}
 .peg .selo img{height:auto;margin:0}
 @media(max-width:900px){.abre .selo{width:104px;bottom:3vh}}
+
+/* correções: rodapé, fechamento sem a esfera, sem rolagem lateral */
+html,body{overflow-x:clip}
+.grande{overflow:hidden}
+.peg .selo{display:grid;width:120px;margin-bottom:22px}
+.peg .selo img{width:36%;height:auto;margin:0}
+.peg{padding-bottom:7vh;align-items:start}
+.pef{padding-top:24px;padding-bottom:30px}
+.fim{position:relative;overflow:hidden;background:radial-gradient(70% 130% at 85% 50%,#1d4658,transparent 62%),radial-gradient(60% 90% at 10% 110%,#0f2a36,transparent 70%),#04121a}
+.fim .bg{display:none}
+.fim .v{display:none}
+.fim .selo{position:absolute;right:7vw;top:50%;transform:translateY(-50%);width:min(24vw,300px)}
+.fim .selo svg{animation-duration:40s}
+.fim .selo text{font-size:12.5px}
+@media(max-width:900px){.fim .selo{position:relative;right:auto;top:auto;transform:none;width:120px;margin-top:5vh}}
+.fim>.selo:not(.bg):not(.v){position:absolute;right:7vw;top:50%;transform:translateY(-50%);width:min(24vw,300px)}
+@media(max-width:900px){.fim>.selo:not(.bg):not(.v){position:relative;right:auto;top:auto;transform:none;width:120px;margin-top:5vh}}
