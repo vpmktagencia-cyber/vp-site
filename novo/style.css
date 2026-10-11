@@ -184,3 +184,4 @@ a{color:inherit;text-decoration:none}
 .trio div{border-radius:var(--r);background-size:cover;height:480px}
 .trio div:nth-child(2){height:600px}
 @media(max-width:900px){.parede{grid-template-columns:1fr 1fr}.casoh{height:auto;padding:110px 0 40px}.ct{position:relative;left:auto;top:auto;transform:none;width:auto;padding:0 5vw}.tela{position:relative;top:auto;right:auto!important;transform:none!important;width:62vw;margin:40px auto 0}.tela.t2{display:none}.vich .foto{width:100%;opacity:.55}.trio{grid-template-columns:1fr}.trio div,.trio div:nth-child(2){height:420px}}
+@media(max-width:900px){.nav{flex-wrap:wrap;gap:14px 0}.nav nav{display:flex!important;order:3;flex:0 0 100%;gap:20px;font-size:11px;overflow-x:auto;white-space:nowrap;padding-bottom:4px}.intro{top:20vh}.cabt h1{font-size:40px}}
