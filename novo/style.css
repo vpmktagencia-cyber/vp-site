@@ -615,3 +615,5 @@ html,body{overflow-x:clip}
 .telas figure{background:#fff}
 .telas video{aspect-ratio:1200/636;object-fit:contain;object-position:top;background:#fff}
 .telas figcaption{background:#04121a}
+/* nome da fundadora em Anton */
+.vt h1{font-family:"Anton",sans-serif;font-weight:400;text-transform:uppercase;letter-spacing:.005em;line-height:.98;font-size:clamp(60px,10vw,170px)}
