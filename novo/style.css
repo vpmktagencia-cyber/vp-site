@@ -391,3 +391,75 @@ body{background:var(--fundo)}
 .cases{padding-top:14vh}
 .frase{padding:14vh 5vw 10vh}
 .pef{margin-top:0}
+
+/* ================= AURORA (refs Popovic Logix / LOCKE / Noir Dress): preto com brilho azul, títulos finos em caixa alta ================= */
+:root{--r:16px;--az2:#7fc0f0;--glow:rgba(70,150,230,.55)}
+body{background:#02050a}
+/* menu: links numa cápsula ao centro, contato em pílula branca */
+.nav{align-items:center}
+.nav nav{margin:0 auto;gap:34px;padding:11px 28px;border-radius:99px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);backdrop-filter:blur(12px);font-size:10px;letter-spacing:.1em}
+.nav nav a,.nav nav a.on,.nav nav a:hover{border-bottom:0;padding-bottom:0}
+.nav nav a.on{color:var(--az2);opacity:1}
+.nav a.pil,.nav a.pil:hover{margin-left:0;background:#fff;color:#02050a;border-radius:99px;padding:10px 22px;border:0;font-size:10px;letter-spacing:.1em;opacity:1}
+/* títulos finos em caixa alta */
+.dir h1,.cabt h1,.tit2 h2,.caso h2,.chamada h2,.sobre h2,.grande h2,.fim h2,.vt h1,.ct h1{font-weight:300;text-transform:uppercase;letter-spacing:.01em;line-height:1.12}
+.dir h1{font-size:clamp(26px,3.3vw,52px)}
+.cabt h1{font-size:clamp(30px,4.6vw,72px)}
+.tit2 h2,.caso h2,.chamada h2,.sobre h2{font-size:clamp(22px,2.5vw,38px)}
+.grande h2{font-size:clamp(30px,4.6vw,72px)}
+.fim h2{font-size:clamp(26px,3.6vw,56px)}
+.tit2 h2 span,.chamada h2 span,.sobre h2 span,.grande h2 span,.cabt h1 span,.fim h2 span{color:var(--az2)}
+.frase h2{font-weight:400;font-size:clamp(20px,2.1vw,32px);line-height:1.45;letter-spacing:0}
+.frase h2 span{color:var(--az2)}
+.cd b,.passos b,.e18 b,.canais b,.srv h3{font-weight:400;letter-spacing:0}
+/* capa: aurora atrás da janela */
+.abre{background:radial-gradient(60vw 46vh at 30% 58%,rgba(40,120,210,.5),transparent 70%),radial-gradient(40vw 30vh at 70% 20%,rgba(30,90,170,.28),transparent 70%),#02050a}
+.abre::after{content:"";position:absolute;left:0;right:0;bottom:0;height:22vh;background:linear-gradient(180deg,transparent,#02050a)}
+.jan .im{-webkit-mask:radial-gradient(ellipse 58% 60% at 46% 46%,#000 26%,transparent 74%);mask:radial-gradient(ellipse 58% 60% at 46% 46%,#000 26%,transparent 74%);opacity:.92}
+.leia{border:1px solid rgba(255,255,255,.3);border-radius:99px;padding:12px 22px;color:#fff;font-size:11px;letter-spacing:.1em;text-transform:uppercase;background:rgba(2,5,10,.5)}
+.leia::after{border-color:var(--az2);background:var(--az2)}
+/* cabeçalhos internos: faixa com aurora */
+.cab{margin:14px;border-radius:var(--r);height:56vh;overflow:hidden;background:radial-gradient(70% 90% at 50% 110%,rgba(60,150,235,.75),transparent 62%),radial-gradient(60% 60% at 20% 0%,rgba(20,70,140,.5),transparent 70%),#030912}
+.cab .bg{opacity:.28;mix-blend-mode:screen;-webkit-mask:none;mask:none}
+.cab .v{background:linear-gradient(180deg,rgba(2,5,10,.5),rgba(2,5,10,0) 60%)}
+.cabt{bottom:auto;top:50%;transform:translateY(-40%);text-align:left}
+.casoh,.vich{margin:14px;border-radius:var(--r)}
+/* "sobre": círculo com brilho na borda de baixo */
+.frase{position:relative;padding:20vh 5vw 16vh;text-align:center;overflow:hidden}
+.frase::before{content:"";position:absolute;left:50%;top:9vh;width:min(46vw,560px);aspect-ratio:1;transform:translateX(-50%);border-radius:50%;box-shadow:0 28px 60px -18px var(--glow),inset 0 -22px 40px -22px var(--glow);border-bottom:1px solid rgba(150,210,255,.7)}
+.frase .g{display:block;position:relative;max-width:640px;margin:0 auto}
+.frase .rot{align-items:center;padding:0 0 18px}
+.frase .rot .pt{display:none}
+.frase .rot small{font-size:clamp(22px,2.5vw,38px);font-weight:300;letter-spacing:.01em;text-transform:uppercase;color:#fff}
+.frase p{margin:22px auto 0}
+.frase .seta{margin-top:26px;background:#fff;color:#02050a;border-radius:99px;padding:10px 22px;font-size:10px;letter-spacing:.1em;text-transform:uppercase}
+.frase .seta::after{content:none}
+/* cartões: cantos suaves e degradê azul na base */
+.cards{gap:14px}
+.cd,.cases .cd{border-radius:var(--r);height:400px}
+.cd:nth-child(even){margin-top:0!important}
+.cd:not(:has(.im)),.cd.claro{background:linear-gradient(180deg,#070c14 35%,rgba(50,120,200,.5));border:1px solid rgba(255,255,255,.1);color:#fff}
+.cd .im::after{background:linear-gradient(180deg,rgba(2,5,10,.1) 30%,rgba(2,5,10,.88))}
+.m,.chamada,.sobre .f,.sobre .x,.contato form,.trio div,.canais>*{border-radius:var(--r)}
+.parede{gap:14px;background:none}
+.m{background:#060b13;border:1px solid rgba(255,255,255,.08)}
+.chamada{border:1px solid rgba(255,255,255,.1);background:radial-gradient(80% 120% at 100% 100%,rgba(50,130,220,.55),transparent 60%),#060b13}
+.sobre{gap:14px}
+.sobre .x,.contato form{background:radial-gradient(80% 90% at 0% 100%,rgba(50,130,220,.4),transparent 60%),#060b13;border:1px solid rgba(255,255,255,.1)}
+/* botões em pílula */
+.pil,.pil.cheia,.pil.branca,.pil.escura{border-radius:99px;background:#fff;color:#02050a;padding:12px 24px;font-size:10px;letter-spacing:.1em}
+.pil:hover,.pil.cheia:hover{background:var(--az2);color:#02050a}
+.centro .pil,.grande .pil{background:rgba(2,5,10,.6);color:#fff;border:1px solid rgba(255,255,255,.3)}
+/* bloco grande: onda de luz */
+.grande{position:relative;padding:20vh 5vw 8vh}
+.grande::before{content:"";position:absolute;left:-10%;right:-10%;top:4vh;height:26vh;border-radius:50%;border-bottom:2px solid rgba(190,230,255,.85);box-shadow:0 30px 60px -20px var(--glow);transform:rotate(-2deg);pointer-events:none}
+.grande img{display:none}
+/* fechamento: aurora subindo da base */
+.fim{margin:16vh 14px 0;border-radius:var(--r);padding:12vh 5vw;background:radial-gradient(90% 120% at 50% 130%,rgba(70,160,240,.85),transparent 62%),#04090f}
+.fim .pil{background:#02050a;color:#fff}
+.pe{background:#02050a;border-top:0}
+@media(max-width:900px){.nav nav{padding:9px 14px;gap:14px;font-size:9px;margin:0}.frase::before{width:86vw}.cab{height:48vh}}
+.frase{padding-bottom:22vh}
+.bl{padding-top:12vh}
+.fim h2{margin-bottom:4vh}
+.fim{background:radial-gradient(90% 120% at 50% 135%,rgba(70,160,240,.9),transparent 64%),#04090f}
