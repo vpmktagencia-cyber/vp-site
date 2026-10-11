@@ -525,3 +525,13 @@ body,.pe{background:#020a0f}
 .fim .v{display:block;background:linear-gradient(90deg,rgba(2,10,15,.75),rgba(2,10,15,.1))}
 .fim .pil{background:#F5F1EC;color:#020a0f}
 .tag,.frase small,.peg small,.srv i,.passos i,.e18 i,.cit b{color:#A8B3BE}
+
+/* serviços: seis áreas */
+.cards.seis{grid-template-columns:repeat(3,1fr)}
+.cards.seis .cd{height:340px}
+.cd .tag{font-size:12px}
+.srv{grid-template-columns:70px 1fr 1.5fr;align-items:start;padding:44px 0}
+.srv h3{font-size:clamp(22px,2.3vw,34px);font-weight:300;text-transform:uppercase;letter-spacing:.01em;line-height:1.15}
+.srv ul{columns:2;column-gap:3vw}
+.srv li{break-inside:avoid;font-size:14px;padding:11px 0;color:rgba(255,255,255,.82)}
+@media(max-width:900px){.cards.seis{grid-template-columns:1fr 1fr}.srv{grid-template-columns:40px 1fr}.srv ul{grid-column:2;columns:1}}
