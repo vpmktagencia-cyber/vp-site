@@ -616,3 +616,8 @@ html,body{overflow-x:clip}
 .telas video{aspect-ratio:1200/636;object-fit:contain;object-position:top;background:#fff}
 .telas figcaption{background:#04121a}
 
+/* cartões com imagem: a foto some em degradê para o escuro, e o texto fica legível */
+.cards.seis .cd .im{background-position:50% 0}
+.cards.seis .cd .im::after{background:linear-gradient(180deg,rgba(2,10,15,.15) 0%,rgba(2,10,15,.55) 42%,rgba(2,10,15,.96) 74%)}
+.cd .im,.cd .im::after{border-radius:inherit}
+.cards.seis .cd .im::after{background:linear-gradient(180deg,rgba(2,10,15,.6) 0%,rgba(2,10,15,.2) 22%,rgba(2,10,15,.55) 46%,rgba(2,10,15,.96) 74%)}
