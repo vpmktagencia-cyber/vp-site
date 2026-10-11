@@ -148,3 +148,39 @@ a{color:inherit;text-decoration:none}
 .rl{display:flex;gap:22px}
 .rod.sol{margin:12vh 0 30px}
 @media(max-width:900px){.srv,.chamada,.caso,.contato{grid-template-columns:1fr}.e18{grid-template-columns:1fr}.cards.tres{grid-template-columns:1fr}.gal{columns:2}.rl{flex-wrap:wrap;gap:12px}.chamada,.contato form{padding:28px}.cab{height:56vh}}
+/* ===== parede de marcas, case em stories, fundadora ===== */
+.parede{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}
+.m{position:relative;aspect-ratio:384/202;display:grid;place-items:center;overflow:hidden;background:#0a0c10;border:1px solid rgba(209,223,236,.16);border-radius:18px;transition:border-color .5s}
+.m::after{content:"";position:absolute;inset:-1px;opacity:0;transition:opacity .55s ease;background:var(--f) center/cover no-repeat}
+.m:hover{border-color:transparent}.m:hover::after{opacity:1}
+.m img{position:relative;z-index:1;max-width:58%;max-height:44%;object-fit:contain;filter:brightness(0) invert(1);transition:opacity .55s ease}
+.m img.alto{max-height:50%;margin-bottom:22px}
+.m.mock:hover img,.m.mock:hover span{opacity:0}
+.m span{position:absolute;left:16px;right:10px;bottom:13px;font-weight:500;font-size:9px;letter-spacing:.2em;text-transform:uppercase;opacity:.55;z-index:1;transition:opacity .4s}
+.nav.fixa{position:absolute}
+.casoh{position:relative;margin:10px;height:calc(100vh - 20px);min-height:680px;border-radius:var(--r);overflow:hidden;background:#050608}
+.casoh .luz,.vich .luz{position:absolute;inset:0;background:radial-gradient(60vw 80vh at 80% 50%,rgba(127,182,234,.3),transparent 70%)}
+.ct{position:absolute;left:3.4vw;top:50%;transform:translateY(-46%);width:min(46vw,620px);z-index:3}
+.ct .lg{display:block;height:44px;max-width:240px;object-fit:contain;object-position:left;filter:brightness(0) invert(1);margin:30px 0 26px}
+.ct .lg.alto{height:78px}
+.ct h1{font-weight:500;font-size:clamp(28px,3.9vw,60px);line-height:1.02;letter-spacing:-.045em}
+.ct p{font-size:15px;line-height:1.65;color:rgba(255,255,255,.72);margin-top:24px;max-width:480px}
+.ct .min{display:flex;align-items:center;gap:12px;margin-top:38px;font-size:10px;letter-spacing:.28em;text-transform:uppercase;opacity:.8}
+.tela{position:absolute;top:50%;width:min(21vw,300px);aspect-ratio:9/16;border-radius:26px;overflow:hidden;border:1px solid rgba(255,255,255,.25);box-shadow:0 30px 80px rgba(0,0,0,.6);background:#000;z-index:2}
+.tela.t1{right:27vw;transform:translateY(-54%)}
+.tela.t2{right:4vw;transform:translateY(-44%)}
+.rolo{animation:sobe linear infinite}
+.rolo img{display:block;width:100%}
+.tela.t2 .rolo{animation-delay:-9s}
+@keyframes sobe{from{transform:translateY(0)}to{transform:translateY(-50%)}}
+.vich{position:relative;margin:10px;height:calc(100vh - 20px);min-height:660px;border-radius:var(--r);overflow:hidden;background:#07090d}
+.vich .foto{position:absolute;right:0;top:0;bottom:0;width:52%;background:url(img/F340.jpg) 50% 12%/cover;-webkit-mask:linear-gradient(90deg,transparent,#000 38%);mask:linear-gradient(90deg,transparent,#000 38%)}
+.vich .luz{background:radial-gradient(50vw 70vh at 20% 60%,rgba(127,182,234,.22),transparent 70%)}
+.vt{position:absolute;left:3.4vw;bottom:9vh;z-index:3}
+.vt h1{font-weight:500;font-size:clamp(54px,11vw,190px);line-height:.86;letter-spacing:-.06em;margin:22px 0}
+.vt h1 span{color:rgba(255,255,255,.5)}
+.vt p{font-size:15px;line-height:1.6;color:rgba(255,255,255,.75);max-width:380px;margin-bottom:24px}
+.trio{display:grid;grid-template-columns:1fr 1.25fr 1fr;gap:10px;align-items:end}
+.trio div{border-radius:var(--r);background-size:cover;height:480px}
+.trio div:nth-child(2){height:600px}
+@media(max-width:900px){.parede{grid-template-columns:1fr 1fr}.casoh{height:auto;padding:110px 0 40px}.ct{position:relative;left:auto;top:auto;transform:none;width:auto;padding:0 5vw}.tela{position:relative;top:auto;right:auto!important;transform:none!important;width:62vw;margin:40px auto 0}.tela.t2{display:none}.vich .foto{width:100%;opacity:.55}.trio{grid-template-columns:1fr}.trio div,.trio div:nth-child(2){height:420px}}

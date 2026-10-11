@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>MOBE · Case · VP Agência</title>
+<meta name="description" content="Projeto autoral e obra bem executada, numa marca só.">
+<meta property="og:title" content="MOBE · Case · VP Agência">
+<meta property="og:description" content="Projeto autoral e obra bem executada, numa marca só.">
+<link rel="icon" href="img/vp-logo.png">
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<section class="casoh"><div class="nav fixa"><a href="index.html"><img src="img/vp-logo.png" alt="VP Agência"></a><nav><a href="servicos.html">Serviços</a><a href="virada.html">Virada de Marca</a><a href="cases.html" class=on>Cases</a><a href="sobre.html">Sobre</a><a href="victoria.html">Fundadora</a></nav><a class="pil" href="contato.html">Contato</a></div>
+  <div class="luz"></div>
+  <div class="ct"><span class="tag">Case 02 · Construtora</span>
+    <img class="lg" src="img/marcas/mobe.png" alt="MOBE">
+    <h1 class="rv">Projeto autoral e obra bem executada, numa marca só.</h1><p>Construtora de Porto Alegre fundada em 2017. A nova marca une os dois lados do negócio, a arquitetura e a execução, com a assinatura Espaços com propósito.</p>
+    <span class="min"><span class="pt"></span>Apresentação da marca em stories</span></div>
+  <div class="tela t1"><div class="rolo" style="animation-duration:51s"><img src="img/cases/mobe.jpg" alt=""><img src="img/cases/mobe.jpg" alt=""></div></div>
+  <div class="tela t2"><div class="rolo" style="animation-duration:51s"><img src="img/cases/mobe.jpg" alt=""><img src="img/cases/mobe.jpg" alt=""></div></div>
+</section>
+<section class="w bl"><div class="chamada rv"><div><span class="tag">Próximo case</span><h2>Roberta Cardoso<br><span>Nutrição</span></h2></div>
+  <div><p>Ciência que acolhe. Cuidado que transforma.</p><a class="pil" href="case-roberta.html">Ver o case</a></div></div></section>
+<section class="fim"><div class="bg"></div><div class="v"></div>
+  <h2>Quer algo assim<br><span>para a sua marca?</span></h2>
+  <a class="pil cheia" href="https://wa.me/555189495637?text=Ol%C3%A1%2C%20VP%21%20Vi%20o%20case%20MOBE%20no%20site%20e%20quero%20algo%20assim%20para%20a%20minha%20marca." target="_blank" rel="noopener"><span class="caps"></span>Chamar no WhatsApp</a>
+  <div class="rod"><span>VP Agência · Simplificamos a comunicação.</span>
+    <span class="rl"><a href="servicos.html">Serviços</a><a href="virada.html">Virada de Marca</a><a href="cases.html">Cases</a><a href="sobre.html">Sobre</a><a href="contato.html">Contato</a></span>
+    <a href="https://instagram.com/vp_marketingdigital" target="_blank" rel="noopener">@vp_marketingdigital</a><span>© 2026</span></div>
+</section>
+<script>
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('on');io.unobserve(e.target)}}),{threshold:.1});
+document.querySelectorAll('.rv').forEach(el=>io.observe(el));
+if(location.search.includes('tudo'))document.querySelectorAll('.rv').forEach(el=>el.classList.add('on'));
+</script>
+</body>
+</html>
