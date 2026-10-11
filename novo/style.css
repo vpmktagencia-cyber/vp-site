@@ -491,3 +491,37 @@ body{background:#000}
 .tag,.frase small,.peg small,.srv i,.passos i,.e18 i,.cit b{color:var(--cz)}
 .frase .rot small{color:#fff}
 .leia::after{background:var(--az);border-color:var(--az)}
+
+/* ================= COR REAL DA VIRADA DE MARCA: azul petróleo escuro, tirado das fotos da página ================= */
+:root{--pet:#0f2a36;--pet2:#1d4658;--fundo:#020a0f;--glow:rgba(70,130,155,.55)}
+body,.pe{background:#020a0f}
+.jan .im,.cab .bg,.cd .im,.fim .bg,.vich .foto,.sobre .f,.trio div{filter:none}
+/* capa: a foto da página (mulher de branco no mar), texto no lado escuro */
+.abre{background:#020a0f}
+.abre .bg{display:block;background-image:url(img/capa-op2.jpg);background-position:50% 50%;animation:none}
+.abre .v{display:block;background:linear-gradient(180deg,rgba(2,10,15,.25),rgba(2,10,15,0) 40%,rgba(2,10,15,.55))}
+.abre::after{background:linear-gradient(180deg,transparent,#020a0f)}
+.jan{display:none}
+.dir{left:5vw;right:auto;width:min(46vw,640px);top:auto;bottom:17vh;transform:none}
+.dir h1{font-size:clamp(30px,4.2vw,66px);background:linear-gradient(100deg,#fff 0%,#F5F1EC 18%,#D1DFEC 52%,#A8B3BE 100%);-webkit-background-clip:text;background-clip:text;color:transparent}
+.cit{left:auto;right:5vw;bottom:8vh;text-align:right}
+/* cabeçalhos internos com as fotos da página */
+.cab{background:#04121a}
+.cab .bg{opacity:1;mix-blend-mode:normal}
+.cab .v{background:linear-gradient(180deg,rgba(2,10,15,.35),rgba(2,10,15,0) 45%,rgba(2,10,15,.6))}
+.cabt h1 span,.tit2 h2 span,.chamada h2 span,.sobre h2 span,.grande h2 span,.fim h2 span,.frase h2 span{color:#A8C4D0}
+.casoh,.vich{background:#020a0f}
+.casoh .luz,.vich .luz{background:radial-gradient(60vw 80vh at 80% 50%,rgba(40,105,130,.5),transparent 70%)}
+/* brilhos e degradês em petróleo */
+.frase::before{box-shadow:0 28px 60px -18px var(--glow),inset 0 -22px 40px -22px var(--glow);border-bottom-color:rgba(170,215,230,.75)}
+.grande::before{border-bottom-color:rgba(200,230,240,.85);box-shadow:0 30px 60px -20px var(--glow)}
+.cd:not(:has(.im)),.cd.claro{background:linear-gradient(180deg,#04121a 30%,#1d4658)}
+.cd .im::after{background:linear-gradient(180deg,rgba(2,10,15,.1) 30%,rgba(2,10,15,.9))}
+.m{background:#04121a}
+.chamada{background:linear-gradient(120deg,rgba(2,10,15,.85),rgba(2,10,15,.3)),url(img/g-fundo.jpg) center/cover}
+.sobre .x,.contato form{background:linear-gradient(160deg,rgba(2,10,15,.8),rgba(2,10,15,.35)),url(img/g-fundo.jpg) center/cover}
+.fim{background:#04121a}
+.fim .bg{display:block;background-image:url(img/g-esfera.jpg);background-position:50% 55%;opacity:1}
+.fim .v{display:block;background:linear-gradient(90deg,rgba(2,10,15,.75),rgba(2,10,15,.1))}
+.fim .pil{background:#F5F1EC;color:#020a0f}
+.tag,.frase small,.peg small,.srv i,.passos i,.e18 i,.cit b{color:#A8B3BE}
