@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Sobre · VP Agência</title>
+<meta name="description" content="Conheça a VP Agência e Victoria Pozzo. Branding, estratégia e design desde 2021.">
+<meta property="og:title" content="Sobre · VP Agência">
+<meta property="og:description" content="Conheça a VP Agência e Victoria Pozzo. Branding, estratégia e design desde 2021.">
+<link rel="icon" href="img/vp-logo.png">
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<section class="cab"><div class="bg" style="background-image:url(img/bastidor.jpg);background-position:50% 45%"></div><div class="v"></div>
+  <div class="nav"><a href="index.html"><img src="img/vp-logo.png" alt="VP Agência"></a><nav><a href="servicos.html">Serviços</a><a href="virada.html">Virada de Marca</a><a href="cases.html">Cases</a><a href="sobre.html" class=on>Sobre</a></nav><a class="pil" href="contato.html">Contato</a></div>
+  <div class="cabt"><span class="tag">Sobre</span><h1>Estratégia com<br><span>olhar humano.</span></h1><p>Uma agência de marca que simplifica a comunicação de empresas e profissionais.</p></div>
+</section>
+<section class="frase w"><div class="g"><div><span class="pt"></span></div>
+  <div><small>A VP</small>
+  <h2 class="rv">Desde 2021, transformamos marcas <i class="caps"></i> unindo branding, estratégia, criatividade e design. <span>Atendemos clientes em todo o Brasil e no exterior.</span></h2></div></div>
+</section>
+<section class="w sobre">
+  <div class="f rv"></div>
+  <div class="x"><div><span class="tag">Quem conduz</span></div>
+    <div><h2 class="rv">Victoria Pozzo<br><span>Fundadora e estrategista.</span></h2></div>
+    <p>Victoria conduz as primeiras conversas e a estratégia de cada projeto. Uma equipe dedicada cuida de cada etapa, da identidade ao conteúdo, para que tudo saia falando a mesma língua.</p></div>
+</section>
+<section class="w bl"><div class="tit2"><h2 class="rv">No que<br><span>acreditamos.</span></h2><p>Três palavras guiam o trabalho da VP.</p></div>
+  <div class="cards tres">
+    <div class="cd  rv"><span class="tag">01</span><span class="pt"></span><b>Inteligência</b><span class="t">Toda decisão criativa nasce de um diagnóstico, não de um palpite.</span></div>
+    <div class="cd  rv"><div class="im" style="background-image:url(img/agua2.jpg)"></div><span class="tag">02</span><span class="pt"></span><b>Autoridade</b><span class="t">Marca clara e bem posicionada é percebida pelo valor que tem.</span></div>
+    <div class="cd claro rv"><span class="tag">03</span><span class="pt"></span><b>Inovação</b><span class="t">Processo ágil e ferramentas atuais para entregar com profundidade.</span></div>
+  </div></section>
+<section class="w bl"><div class="chamada rv"><div><span class="tag">Como trabalhamos</span><h2>Processo claro,<br><span>do começo ao fim.</span></h2></div>
+  <div><p>Cada projeto segue etapas definidas, com prazos e entregas combinados desde a primeira conversa.</p>
+  <a class="pil" href="virada.html">Ver o método</a></div></div></section>
+<section class="fim"><div class="bg"></div><div class="v"></div>
+  <h2>Vamos conversar<br><span>sobre a sua marca?</span></h2>
+  <a class="pil cheia" href="https://wa.me/555189495637?text=Ol%C3%A1%2C%20VP%21%20Vim%20pelo%20site%20e%20quero%20conversar%20sobre%20a%20minha%20marca." target="_blank" rel="noopener"><span class="caps"></span>Chamar no WhatsApp</a>
+  <div class="rod"><span>VP Agência · Simplificamos a comunicação.</span>
+    <span class="rl"><a href="servicos.html">Serviços</a><a href="virada.html">Virada de Marca</a><a href="cases.html">Cases</a><a href="sobre.html">Sobre</a><a href="contato.html">Contato</a></span>
+    <a href="https://instagram.com/vp_marketingdigital" target="_blank" rel="noopener">@vp_marketingdigital</a><span>© 2026</span></div>
+</section>
+<script>
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('on');io.unobserve(e.target)}}),{threshold:.1});
+document.querySelectorAll('.rv').forEach(el=>io.observe(el));
+if(location.search.includes('tudo'))document.querySelectorAll('.rv').forEach(el=>el.classList.add('on'));
+</script>
+</body>
+</html>

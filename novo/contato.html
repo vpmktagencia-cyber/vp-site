@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Contato · VP Agência</title>
+<meta name="description" content="Fale com a VP Agência pelo WhatsApp (51) 98949-5637 ou pelo Instagram @vp_marketingdigital.">
+<meta property="og:title" content="Contato · VP Agência">
+<meta property="og:description" content="Fale com a VP Agência pelo WhatsApp (51) 98949-5637 ou pelo Instagram @vp_marketingdigital.">
+<link rel="icon" href="img/vp-logo.png">
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<section class="cab"><div class="bg" style="background-image:url(img/agua2.jpg);background-position:50% 60%"></div><div class="v"></div>
+  <div class="nav"><a href="index.html"><img src="img/vp-logo.png" alt="VP Agência"></a><nav><a href="servicos.html">Serviços</a><a href="virada.html">Virada de Marca</a><a href="cases.html">Cases</a><a href="sobre.html">Sobre</a></nav><a class="pil" href="contato.html">Contato</a></div>
+  <div class="cabt"><span class="tag">Contato</span><h1>Vamos conversar<br><span>sobre a sua marca?</span></h1><p>Conte em poucas linhas o que você faz e onde sente que a comunicação ainda não mostra o seu trabalho.</p></div>
+</section>
+<section class="w bl"><div class="contato">
+  <form class="rv" id="f"><span class="tag">Escreva para a VP</span>
+    <label>Seu nome<input name="n" required></label>
+    <label>Sua empresa ou profissão<input name="e"></label>
+    <label>O que você precisa<textarea name="m" rows="4" required></textarea></label>
+    <button class="pil cheia" type="submit"><span class="caps"></span>Enviar pelo WhatsApp</button>
+    <small>Ao enviar, o WhatsApp abre com a sua mensagem pronta.</small></form>
+  <div class="canais">
+    <a class="rv" href="https://wa.me/555189495637?text=Ol%C3%A1%2C%20VP%21%20Vim%20pelo%20site%20e%20quero%20conversar%20sobre%20a%20minha%20marca." target="_blank" rel="noopener"><span class="tag">WhatsApp</span><b>(51) 98949-5637</b><span>Resposta direta da equipe</span></a>
+    <a class="rv" href="https://instagram.com/vp_marketingdigital" target="_blank" rel="noopener"><span class="tag">Instagram</span><b>@vp_marketingdigital</b><span>Bastidores e trabalhos</span></a>
+    <div class="rv"><span class="tag">Atendimento</span><b>Todo o Brasil</b><span>Reuniões on-line</span></div>
+  </div></div></section>
+<script>
+document.getElementById('f').addEventListener('submit',e=>{e.preventDefault();const d=new FormData(e.target);
+const t=`Olá, VP! Sou ${d.get('n')}${d.get('e')?' ('+d.get('e')+')':''}. ${d.get('m')}`;
+window.open('https://wa.me/555189495637?text='+encodeURIComponent(t),'_blank')});
+</script>
+<footer class="w"><div class="rod sol"><span>VP Agência · Simplificamos a comunicação.</span>
+  <span class="rl"><a href="servicos.html">Serviços</a><a href="virada.html">Virada de Marca</a><a href="cases.html">Cases</a><a href="sobre.html">Sobre</a></span><span>© 2026</span></div></footer>
+<script>
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('on');io.unobserve(e.target)}}),{threshold:.1});
+document.querySelectorAll('.rv').forEach(el=>io.observe(el));
+if(location.search.includes('tudo'))document.querySelectorAll('.rv').forEach(el=>el.classList.add('on'));
+</script>
+</body>
+</html>

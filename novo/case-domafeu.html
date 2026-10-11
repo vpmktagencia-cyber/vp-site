@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Domafeu Sweet · Case · VP Agência</title>
+<meta name="description" content="Confeitaria. Paleta, logo e feed com o produto em primeiro plano.">
+<meta property="og:title" content="Domafeu Sweet · Case · VP Agência">
+<meta property="og:description" content="Confeitaria. Paleta, logo e feed com o produto em primeiro plano.">
+<link rel="icon" href="img/vp-logo.png">
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<section class="cab"><div class="bg" style="background-image:url(img/domafeu-bolo.jpg);background-position:50% 40%"></div><div class="v"></div>
+  <div class="nav"><a href="index.html"><img src="img/vp-logo.png" alt="VP Agência"></a><nav><a href="servicos.html">Serviços</a><a href="virada.html">Virada de Marca</a><a href="cases.html" class=on>Cases</a><a href="sobre.html">Sobre</a></nav><a class="pil" href="contato.html">Contato</a></div>
+  <div class="cabt"><span class="tag">Case 04 · Alimentação</span><h1>Domafeu Sweet.</h1><p>Confeitaria · Marca e conteúdo</p></div>
+</section>
+<section class="w bl"><div class="caso"><div><span class="tag">O projeto</span><h2 class="rv">Doce com cara de desejo.</h2></div>
+  <div><p>Cucas e docinhos com visual que dá vontade de pedir. Definimos a paleta, o logo tipográfico e o livrinho da marca, e levamos isso para o feed com o produto sempre em primeiro plano.</p><div class="ents"><span class="tag">Paleta de cores</span><span class="tag">Logo tipográfico</span><span class="tag">Livrinho da marca</span><span class="tag">Posts do feed</span></div></div></div></section>
+<section class="w"><div class="gal"><div class="rv" style="background-image:url(img/domafeu-capa.jpg)"></div><div class="rv" style="background-image:url(img/domafeu-pistache.jpg)"></div><div class="rv" style="background-image:url(img/domafeu-texturas.jpg)"></div><div class="rv" style="background-image:url(img/domafeu-docinhos.jpg)"></div><div class="rv" style="background-image:url(img/domafeu-grade.jpg)"></div><div class="rv" style="background-image:url(img/domafeu-cuca.jpg)"></div></div></section>
+<section class="w bl"><div class="chamada rv"><div><span class="tag">Próximo case</span><h2>Murilo Filippi<br><span>Saúde</span></h2></div>
+  <div><p>Cirurgia bucomaxilofacial. Virada de Marca completa, do posicionamento à fachada.</p><a class="pil" href="case-murilo.html">Ver o case</a></div></div></section>
+<section class="fim"><div class="bg"></div><div class="v"></div>
+  <h2>Quer algo assim<br><span>para a sua marca?</span></h2>
+  <a class="pil cheia" href="https://wa.me/555189495637?text=Ol%C3%A1%2C%20VP%21%20Vi%20o%20case%20Domafeu%20Sweet%20no%20site%20e%20quero%20algo%20assim%20para%20a%20minha%20marca." target="_blank" rel="noopener"><span class="caps"></span>Chamar no WhatsApp</a>
+  <div class="rod"><span>VP Agência · Simplificamos a comunicação.</span>
+    <span class="rl"><a href="servicos.html">Serviços</a><a href="virada.html">Virada de Marca</a><a href="cases.html">Cases</a><a href="sobre.html">Sobre</a><a href="contato.html">Contato</a></span>
+    <a href="https://instagram.com/vp_marketingdigital" target="_blank" rel="noopener">@vp_marketingdigital</a><span>© 2026</span></div>
+</section>
+<script>
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('on');io.unobserve(e.target)}}),{threshold:.1});
+document.querySelectorAll('.rv').forEach(el=>io.observe(el));
+if(location.search.includes('tudo'))document.querySelectorAll('.rv').forEach(el=>el.classList.add('on'));
+</script>
+</body>
+</html>
