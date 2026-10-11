@@ -597,3 +597,7 @@ html,body{overflow-x:clip}
 /* ensaios: fotos inteiras, sem recorte */
 .ensaios{align-items:center}
 .ensaios img,.ensaios img:nth-child(-n+3),.ensaios img:nth-child(n+4){aspect-ratio:auto;height:auto;object-fit:contain}
+/* ensaios: 3 retratos grandes + uma tira de fotos individuais, todas inteiras e da mesma altura */
+.tira{display:flex;gap:14px;margin-top:14px;align-items:flex-start}
+.tira img{min-width:0;width:100%;height:auto;border-radius:14px;display:block}
+@media(max-width:900px){.tira{flex-wrap:wrap}.tira img{flex:1 1 28%!important}}
