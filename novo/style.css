@@ -626,3 +626,7 @@ html,body{overflow-x:clip}
 .frase + section{padding-top:8vh}
 @media(max-width:900px){.frase{min-height:calc(9vh + 86vw + 12vh)}}
 .m img.alto{margin-bottom:0}
+/* três sites lado a lado, mesmo quadro, sem faixa branca */
+.telas{grid-template-columns:repeat(3,1fr)}
+.telas video{aspect-ratio:1200/576;object-fit:cover;object-position:top}
+@media(max-width:900px){.telas{grid-template-columns:1fr}}
