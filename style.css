@@ -710,3 +710,32 @@ html,body{overflow-x:clip}
   .pef{flex-direction:column;gap:8px;align-items:flex-start}
   .contato{grid-template-columns:1fr}
 }
+/* rodapé no celular */
+@media(max-width:900px){
+  .fim>.selo:not(.bg):not(.v){display:none}
+  .pe{padding-top:56px}
+  .peg{grid-template-columns:1fr 1fr;gap:30px 20px;padding-bottom:44px;align-items:start}
+  .peg>div:nth-child(1){grid-column:1/-1}
+  .peg>div:nth-child(2){grid-column:1;grid-row:2/span 2}
+  .peg>div:nth-child(3){grid-column:2;grid-row:2}
+  .peg>div:nth-child(4){grid-column:2;grid-row:3}
+  .peg .selo{width:92px;margin-bottom:18px}
+  .peg p{font-size:21px}
+  .peg small{margin-bottom:12px}
+  .peg a,.peg span{font-size:14.5px;padding:5px 0}
+  .pef{flex-direction:column;align-items:flex-start;gap:10px;padding-top:22px;padding-bottom:96px;font-size:12px}
+}
+
+/* espaçamento entre seções (o respiro estava sendo anulado por uma regra posterior) */
+.w.bl{padding-top:10vh}
+@media(max-width:900px){
+  .w.bl,.w.cases{padding-top:9vh}
+  .frase.w{padding:11vh 6vw 9vh;min-height:calc(86vw + 16vh)}
+  .frase::before{top:5vh}
+  .grande.w{padding:16vh 6vw 6vh}
+  .centro{margin:6vh 0 2vh}
+  .sobre{margin-top:9vh}
+  .sobre .f{height:auto;aspect-ratio:818/1180;background-position:50% 60%}
+  .trio{margin-top:2vh}
+  .vit{padding:7vh 0}
+}
