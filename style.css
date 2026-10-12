@@ -630,3 +630,10 @@ html,body{overflow-x:clip}
 .telas{grid-template-columns:repeat(3,1fr)}
 .telas video{aspect-ratio:1200/576;object-fit:cover;object-position:top}
 @media(max-width:900px){.telas{grid-template-columns:1fr}}
+/* botão flutuante do WhatsApp */
+.zapf{position:fixed;right:22px;bottom:22px;z-index:60;width:58px;height:58px;border-radius:50%;background:#25D366;display:grid;place-items:center;box-shadow:0 10px 30px rgba(0,0,0,.45);transition:transform .2s}
+.zapf:hover{transform:scale(1.08)}
+.zapf svg{width:32px;height:32px}
+.abre .selo{right:calc(5vw + 70px)}
+.cit{right:calc(5vw + 250px)}
+@media(max-width:900px){.zapf{right:14px;bottom:14px;width:52px;height:52px}}
