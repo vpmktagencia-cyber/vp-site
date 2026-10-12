@@ -637,3 +637,9 @@ html,body{overflow-x:clip}
 .abre .selo{right:calc(5vw + 70px)}
 .cit{right:calc(5vw + 250px)}
 @media(max-width:900px){.zapf{right:14px;bottom:14px;width:52px;height:52px}}
+/* política de privacidade */
+.priv .srv{grid-template-columns:70px 1fr 1.6fr}
+.ptx p{font-size:15px;line-height:1.75;color:rgba(255,255,255,.78);margin-bottom:12px;max-width:none}
+.pef a{color:inherit;text-decoration:underline;text-underline-offset:3px}
+.pef a:hover{color:#fff}
+@media(max-width:900px){.priv .srv{grid-template-columns:40px 1fr}.priv .ptx{grid-column:2}}
