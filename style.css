@@ -643,3 +643,70 @@ html,body{overflow-x:clip}
 .pef a{color:inherit;text-decoration:underline;text-underline-offset:3px}
 .pef a:hover{color:#fff}
 @media(max-width:900px){.priv .srv{grid-template-columns:40px 1fr}.priv .ptx{grid-column:2}}
+
+/* ================= CELULAR ================= */
+@media(max-width:900px){
+  .w{padding:0 6vw}
+  /* menu */
+  .nav{left:5vw;right:5vw;top:18px;flex-wrap:nowrap;gap:12px}
+  .nav img{height:26px}
+  .nav nav{display:flex!important;order:0;flex:1 1 auto;min-width:0;margin:0;padding:9px 14px;gap:16px;font-size:9px;overflow-x:auto;white-space:nowrap;scrollbar-width:none}
+  .nav nav::-webkit-scrollbar{display:none}
+  /* capa: a mulher aparece, o texto fica embaixo sobre um escurecido */
+  .abre{height:100svh;min-height:600px}
+  .abre .bg{background-position:72% 50%}
+  .abre .v{background:linear-gradient(180deg,rgba(2,10,15,.45),rgba(2,10,15,0) 30%,rgba(2,10,15,.25) 52%,rgba(2,10,15,.96) 84%)}
+  .dir{left:6vw;right:6vw;width:auto;bottom:11vh;top:auto;transform:none}
+  .dir h1{font-size:34px;line-height:1.1}
+  .dir p{font-size:14px;margin:14px 0 22px}
+  .abre .selo,.cit{display:none}
+  /* textos legíveis */
+  .cabt p,.tit2 p,.vt2 p,.cd span.t,.passos span,.frase p,.srv p,.ct p,.vt p,.chamada p,.sobre p{font-size:14.5px;line-height:1.65}
+  .cabt h1{font-size:36px}
+  .cab .v{background:linear-gradient(180deg,rgba(2,10,15,.6),rgba(2,10,15,.45) 50%,rgba(2,10,15,.8))}
+  .tit2{margin-bottom:5vh}
+  .tit2 h2,.caso h2,.chamada h2,.sobre h2,.vt2 h3{font-size:26px}
+  .frase h2{font-size:19px}
+  .frase .rot small{font-size:24px}
+  /* arco de luz não passa por cima do título */
+  .grande{padding:16vh 6vw 6vh}
+  .grande::before{top:0;height:11vh}
+  .grande h2{font-size:32px}
+  /* cartões */
+  .cards.seis{grid-template-columns:1fr 1fr;gap:10px}
+  .cards.seis .cd{height:250px;padding:18px}
+  .cd .tag{left:18px;top:16px}
+  .cd b{font-size:17px}
+  .cards.seis .cd span.t{font-size:12.5px;line-height:1.5}
+  .cards.tres .cd{height:220px}
+  .parede{grid-template-columns:1fr 1fr;gap:10px}
+  .passos{grid-template-columns:1fr 1fr;gap:6vw}
+  /* trabalhos */
+  .trilho img{height:300px}
+  .telas{grid-template-columns:1fr;gap:12px}
+  .ensaios{grid-template-columns:repeat(3,1fr);gap:8px}
+  .tira{flex-wrap:nowrap;overflow-x:auto;gap:8px;scrollbar-width:none}
+  .tira::-webkit-scrollbar{display:none}
+  .tira img{flex:0 0 auto!important;width:auto;height:150px}
+  .srv{grid-template-columns:34px 1fr;padding:30px 0}
+  .srv h3{font-size:22px}
+  /* fundadora e sobre */
+  .vich{height:100svh;min-height:600px}
+  .vich .foto{width:100%;opacity:.7;-webkit-mask:linear-gradient(180deg,#000 45%,transparent);mask:linear-gradient(180deg,#000 45%,transparent)}
+  .vt{left:6vw;right:6vw;bottom:8vh}
+  .vt h1{font-size:58px}
+  .trio{grid-template-columns:1fr 1fr 1fr;gap:8px;align-items:start}
+  .trio img{border-radius:10px}
+  .sobre .f{height:440px}
+  /* case */
+  .casoh{margin:10px}
+  .ct h1{font-size:28px}
+  /* fechamento e rodapé */
+  .fim{margin:12vh 10px 0;padding:9vh 6vw}
+  .fim h2{font-size:28px}
+  .fim>.selo:not(.bg):not(.v){width:96px;margin-top:5vh}
+  .peg{grid-template-columns:1fr 1fr;gap:34px 18px}
+  .peg>div:first-child{grid-column:1/-1}
+  .pef{flex-direction:column;gap:8px;align-items:flex-start}
+  .contato{grid-template-columns:1fr}
+}
